@@ -32,38 +32,38 @@ export default function DashboardPage() {
       </div>
     );
   }
-const tourSteps: GuideStep[] = [
-    {
-      targetId: "books",
-      text: "حسنا انا هو مساعدك ،هنا تجد المكتبة تاعك لي فيها فيديوهات لي تشوفهم، نقولك سر تقدر تعدل عليها وتخصصها",
-      mood: "neutral", 
-    },
-    {
-      targetId: "pomodoro",
-      text: "شوف شوف راك تسمعني  نلقاك تدخل هنا بلا ما تخلص نطفي لك البيسي انا الماوس الشرير",
-      mood: "angry" 
-    },
-     {
-      targetId: "pomodoro",
-      text: "امزح فقط هههههههههههه",
-      mood: "funny" 
-    },
-    {
-      targetId: "pomodoro",
-      text: "هنا سيتم نقلك الى صفحة فخمة نظيفة فيها تايمر وانت تدرس وبدون اي تشتيت",
-      mood: "neutral" 
-    },
-    {
-      targetId: "lessons",
-      text: "هنا يا اخي تلقى تجميعة مقاطع تعليمية",
-      mood: "neutral"
-    },
-       {
-      targetId: "lessons",
-      text: `مسكتك لا تحاول تهرب من مقاطع نور الدين الطويلة ههههههههههههههههههههههههههههه انا قاعد اتابعك يا ${user?.username}`,
-      mood: "funny"
-    },
-  ]
+// const tourSteps: GuideStep[] = [
+//     {
+//       targetId: "books",
+//       text: "حسنا انا هو مساعدك ،هنا تجد المكتبة تاعك لي فيها فيديوهات لي تشوفهم، نقولك سر تقدر تعدل عليها وتخصصها",
+//       mood: "neutral", 
+//     },
+//     {
+//       targetId: "pomodoro",
+//       text: "شوف شوف راك تسمعني  نلقاك تدخل هنا بلا ما تخلص نطفي لك البيسي انا الماوس الشرير",
+//       mood: "angry" 
+//     },
+//      {
+//       targetId: "pomodoro",
+//       text: "امزح فقط هههههههههههه",
+//       mood: "funny" 
+//     },
+//     {
+//       targetId: "pomodoro",
+//       text: "هنا سيتم نقلك الى صفحة فخمة نظيفة فيها تايمر وانت تدرس وبدون اي تشتيت",
+//       mood: "neutral" 
+//     },
+//     {
+//       targetId: "lessons",
+//       text: "هنا يا اخي تلقى تجميعة مقاطع تعليمية",
+//       mood: "neutral"
+//     },
+//        {
+//       targetId: "lessons",
+//       text: `مسكتك لا تحاول تهرب من مقاطع نور الدين الطويلة ههههههههههههههههههههههههههههه انا قاعد اتابعك يا ${user?.username}`,
+//       mood: "funny"
+//     },
+//   ]
   return (
     <div className="w-full h-full">
       <div className=" w-full bg-black relative overflow-hidden">
@@ -80,7 +80,7 @@ const tourSteps: GuideStep[] = [
      `,
    }}
  />
-{localStorage.getItem("learn-first-page") != null ? null : <IndependentGuideCursor steps={tourSteps} delayPerTarget={3500} />}
+{/* {localStorage.getItem("learn-first-page") != null ? null : <IndependentGuideCursor steps={tourSteps} delayPerTarget={3500}  />} */}
 
      <ToolsMenu />
 </div>
